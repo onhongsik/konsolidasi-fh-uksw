@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konsolidasi Akbar FH UKSW</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('assets/gedung-fakultas-hukum.jpg') center/cover no-repeat;
+            backdrop-filter: blur(2px);            
+        }
+        
+        .poster {
+            width: 100%;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 16px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        
+        .title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: clamp(1.8rem, 5vw, 2.5rem); /* Responsif */
+            color: #2c3e50;
+            margin: 0;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+        
+        .subtitle {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: clamp(1.2rem, 3vw, 1.5rem); /* Responsif */
+            color: #e74c3c;
+            margin: 10px 0;
+        }
+        
+        .divider {
+            height: 3px;
+            background: linear-gradient(90deg, #e74c3c, #3498db);
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 2px;
+        }
+        
+        .details {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 20px 0;
+        }
+        
+        .detail-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: clamp(1rem, 3vw, 1.1rem); /* Responsif */
+        }
+        
+        .detail-item i {
+            color: #e74c3c;
+            font-size: 1.2rem;
+        }
+        
+        .footer {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-top: 20px;
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
+        }
+        
+        .university-logo {
+            width: 60px; /* Diperkecil untuk mobile */
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            opacity: 0.9;
+        }
+
+        /* Media Query untuk layar kecil (mobile) */
+        @media (max-width: 480px) {
+            .poster {
+                padding: 15px;
+            }
+            .university-logo {
+                width: 50px;
+                top: 10px;
+                right: 10px;
+            }
+            .title {
+                margin-top: 10px; /* Hindari tumpang tindih dengan logo */
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="poster">
+        <img src="assets/logo-removebg-preview.png" alt="UKSW Logo" class="university-logo">
+        
+        <div class="header">
+            <h1 class="title">KONSOLIDASI AKBAR</h1>
+            <h2 class="subtitle">MAHASISWA FAKULTAS HUKUM UKSW</h2>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="details">
+            <div class="detail-item">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Rabu, 7 Mei 2025</span>
+            </div>
+            
+            <div class="detail-item">
+                <i class="fas fa-clock"></i>
+                <span>18.00 WIB</span>
+            </div>
+            
+            <div class="detail-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Selasar FH UKSW</span>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="footer">
+            <p>#SolidaritasUntukPerubahan</p>
+        </div>
+    </div>
+</body>
+</html>
